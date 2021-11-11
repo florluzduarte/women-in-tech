@@ -202,7 +202,7 @@ footer {
 }
 
 /* versión tablets */
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   #title {
     margin-right: 12vw;
     margin-left: 12vw;
