@@ -1,0 +1,259 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+#main {
+  color: #232323;
+  font-family: quicksand;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: #f2f2f2;
+}
+
+.nav-links li {
+  list-style-type: none;
+}
+
+#logo {
+  font-size: 20px;
+  color: #232323;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-links a {
+  color: #232323;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.nav-links li :hover {
+  color: #ff7266;
+}
+
+#title {
+  font-family: lora;
+  text-align: center;
+}
+
+#sub-title {
+  font-family: quicksand;
+  text-align: center;
+}
+
+figure {
+  text-align: center;
+}
+
+#image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 97%;
+  height: auto;
+}
+
+figcaption {
+  text-align: center;
+  padding: 10px 0px 50px 0px;
+  margin: 0px 30px 0px 30px;
+}
+
+#intro {
+  background-color: #fff0f0;
+  text-align: left;
+  padding: 50px;
+}
+
+#intro h2 {
+  padding: 0px 0px 20px 0px;
+  text-align: center;
+}
+
+#tarjetas {
+  background-color: white;
+  display: grid;
+  place-items: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  grid-gap: 10px;
+}
+
+.card {
+  background-color: #fff0f0;
+  box-shadow: 0 0 10px grey;
+}
+
+.card-img {
+  width: 100%;
+  margin: 0px 0px 10px 0px;
+}
+
+.info-link {
+  text-decoration: none;
+  color: #232323;
+  margin: 0px 10px 0px 10px;
+}
+
+.info-link:hover {
+  color: #ff7266;
+}
+
+.info-p {
+  margin: 10px 10px 20px 10px;
+}
+
+button {
+  border: none;
+  background-color: #ff7266;
+  padding: 10px 15px 10px 15px;
+  border-radius: 20px;
+  font-family: quicksand;
+  font-size: 15px;
+}
+
+#final-notes {
+  text-align: center;
+  margin: 30px 50px 60px 50px;
+}
+
+q {
+  font-family: lora;
+  font-size: 20px;
+  margin: 50px 0px 50px 0px;
+}
+
+#quote {
+  font-family: lora;
+  font-size: 20px;
+}
+
+#final-link {
+  text-align: center;
+  margin: 30px 0px 40px 0px;
+}
+
+#final-link p {
+  margin: 15px;
+}
+
+#tribute-link {
+  text-decoration: none;
+  color: white;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: #f2f2f2;
+}
+
+/* versión smartphones */
+@media only screen and (max-width: 767px) {
+  #title {
+    margin-right: 20px;
+    margin-left: 35px;
+    font-size: 50px;
+    text-align: left;
+    margin-top: 9vh;
+  }
+  .nav-links {
+    width: 35%;
+  }
+  #sub-title {
+    font-size: 18px;
+    margin-top: 35px;
+    margin-right: 20px;
+    margin-left: 35px;
+    text-align: left;
+  }
+  #image {
+    margin-top: 60px;
+  }
+
+  #tarjetas {
+    grid-template-columns: repeat(1, 340px);
+    grid-gap: 10px;
+    padding: 20px 30px 20px 30px;
+    justify-content: space-around;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+}
+
+/* versión tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  #title {
+    margin-right: 12vw;
+    margin-left: 12vw;
+    font-size: 11vh;
+    margin-top: 11vh;
+  }
+  .nav-links {
+    width: 30%;
+  }
+  #sub-title {
+    font-size: 4vh;
+    margin-top: 5vh;
+  }
+  #image {
+    margin-top: 70px;
+  }
+  #tarjetas {
+    grid-template-columns: repeat(2, 400px);
+    grid-gap: 10px;
+    padding: 50px 100px 50px 100px;
+    justify-content: space-around;
+  }
+}
+
+/* versión computer screen */
+@media only screen and (min-width: 1024px) {
+  #title {
+    margin-right: 15vw;
+    margin-left: 15vw;
+    font-size: 13vh;
+    margin-top: 12vh;
+  }
+  .nav-links {
+    width: 20%;
+  }
+  #sub-title {
+    font-size: 25px;
+    margin-top: 40px;
+  }
+  #image {
+    margin-top: 17vh;
+  }
+
+  #intro p {
+    padding: 0px 100px 0px 100px;
+  }
+
+  #tarjetas {
+    grid-template-columns: repeat(3, 400px);
+    grid-gap: 10px;
+    padding: 50px 100px 50px 100px;
+    justify-content: space-around;
+  }
+}
